@@ -1,0 +1,14 @@
+#libdirs-$(CONFIG_LIBCOAP)	+= libcoap-dtls
+libdirs-$(CONFIG_WOLFSSL)	+= wolfssl
+libdirs-$(CONFIG_WRSA)		+= wrsa
+#libdirs-$(CONFIG_AXTLS)		+= axtls
+#libdirs-$(CONFIG_FREERTOS)	+= freertos
+libdirs-y				+= common
+libdirs-y				+= sys
+libdirs-y				+= airkiss
+libdirs-$(CONFIG_HTTPD)	+= http
+libdirs-$(CONFIG_WEB_AS_DATA)	+= www
+libdirs-$(CONFIG_WLA) 	+= wla
+libdirs-$(CONFIG_MQTTC)	+= mqtt
+libdirs-$(CONFIG_CJSON)	+= cjson
+libdirs-$(CONFIG_DEV)	+= dev

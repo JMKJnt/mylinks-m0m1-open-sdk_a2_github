@@ -1,0 +1,44 @@
+///////////////////////////////////////////////////////////////////////////////
+//
+//	Installing M88WI6800 SDK for linux
+//
+///////////////////////////////////////////////////////////////////////////////
+1. Any version of Linux can be used, however the 14.04 LTS 32-bit is recommended.
+	If your Linux kernel is 64-bit, you need to install ia32-libs to support SDK
+	toolchain.
+	"sudo apt-get install build-essential ia32-libs"
+2. Extract M88WI6800 SDK for Linux to your desired directory.
+	"tar zxvf WI6800_sdk.tgz"
+
+///////////////////////////////////////////////////////////////////////////////
+//
+//	Installing toolchain
+//
+///////////////////////////////////////////////////////////////////////////////
+1. Locate the toolchain file ba-elf_4.7.3.tgz, and extract its content to
+	SDK_path/toolchain folder.
+	"tar zxvf ba-elf_4.7.3.tgz"
+
+///////////////////////////////////////////////////////////////////////////////
+//
+//	Building library
+//
+///////////////////////////////////////////////////////////////////////////////
+1. If you didn't modify source code in "lib", you can escape this step.
+	Otherwise enter the root directory of SDK.
+	"make lib"				-> build library
+2. After building, new library files will be generated in library directory.
+3. You have to build your own project again to generate new firmware image.
+
+///////////////////////////////////////////////////////////////////////////////
+//
+//	Building project
+//
+///////////////////////////////////////////////////////////////////////////////
+1. The default example is iot_demo project which under "proj" folder. Enter the
+	root directory of SDK.
+	"make clean-iot_demo"	-> clean object code of proj/iot_demo
+	"make iot_demo"			-> build iot_demo.img
+2. After building, output files will be generated on images directory.
+3. If you create new project folder under "proj", for example, naming "user_test".
+	Just type "make user_test" to build "user_test.img" firmware image.

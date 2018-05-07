@@ -1,0 +1,71 @@
+(2.2) 2017/09/20
+	*[AT] Add deep sleep command.
+	*[SDK] RLIB compatible.
+	*[SDK] Support A2 chip.
+	*[AWS] Add MQTT client.
+	*[AWS] Add cJSON parser.
+	*[AWS] Speed up RSA encryption.
+	*[COAP] Add COAP server.
+	*[UART] Fix UR RX and flow control threshold.
+	*[Wi-Fi] Support RF zero calibration.
+	*[Wi-Fi] Fix connection fail with WEP share mode.
+	*[Wi-Fi] Activate power saving.
+	*[Wi-Fi] Fix switching AP/STA mode may hang.
+	*[Wi-Fi] Fix connection fail with xiaomi router.
+
+(2.1) 2017/03/07
+	*[OTA] Fix OTA fail when use apache server.
+	*[UTILITY] Enhance stability.
+	*[UART] Output AT command's response strings to UART1(GPIO 0 1).
+	*[BOOT] Interrupt booting flow for firmware upgrade by checkng ctrl+c.
+	*[CFG] Add config checksum.
+	*[SDK] Revise version and build time format.
+	*[LWIP] Decouple API from Wi-Fi library.
+	*[LWIP] Add NTP daemon.
+	*[LWIP] Fix TCP checksum error on sending consecutive TCP.
+	*[Wi-Fi] Add AP+STA mode.
+	*[Wi-Fi] Fix OMNICONFIG's MIMO decoder.
+
+(2.0.6) 2017/01/26
+	*[Wi-Fi] Support minimum RAM usaged.
+	*[LWIP] Revise gethostbyname.
+	*[AT] Enhance AT command set and revise error handler.
+	*[Wi-Fi] Revise scan done RSSI level.
+	*[Wi-Fi] Add MIMO decoder to omniconfig.
+
+(2.0.5) 2016/12/13
+	*[MAKE] Fix compile dependency.
+	*[Wi-Fi] Add AP mode, omniconfig, and enhance API.
+	*[AT] Enhance AT command set and transparent mode.
+	*[UART] Add flow control.
+
+(2.0.4) 2016/08/19
+	*[OTA] Add OTA function.
+	*[Wi-Fi] Add easylink sample code.
+	*[Wi-Fi] Add and revise API.
+	*[BOOT] Add mico_boot image.
+	*[LWIP] Fix DHCP client can not get IP.
+	*[FREERTOS] Correct timewait from 10ms to 1ms.
+	*[MDNS] Add MDNS responser.
+
+(2.0.3) 2016/07/20
+	*[FLASH] Add API and demo.
+	*[PWM] Add API and demo.
+	*[Wi-Fi] Add scan API, notifications, and monitor demo.
+
+(2.0.2) 2016/07/15
+	*[SDK] First release to MXCHIP.
+	*[API] GPIO/UART/Wi-Fi.
+
+(2.0.1) 2016/05/23
+	*[SDK] Open LWIP and FreeRTOS source code.
+	*[SDK] Add built SDK information.
+	*[RFC] Fix the freq offset function.
+	*[RFC] Update RF regs setting and report RFC result.
+	*[SDK] Add default configuration.
+	*[UTILITY] Add Linux and Windows firmware upgrade utility.
+	*[BOOT] Add the boot image.
+	*[BOOT] Fix boot image alignment error.
+
+(2.0.0) 2016/05/10
+	*[SDK] Initial version release.
