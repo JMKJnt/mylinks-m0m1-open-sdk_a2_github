@@ -55,4 +55,4 @@ SECTIONS
 
 }
 
-INCLUDE "/mnt/hgfs/m001/mylinks-m0m1-open-sdk_a2_local/include/rlib_sym_v2v3_common.lds"
+INCLUDE "/mnt/hgfs/m001/mylinks-m0m1-open-sdk_a2_github/include/rlib_sym_v2v3_common.lds"
